@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  
+}
+
+header {
+  background-color: #a55903;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav button {
+  background-color: #ffa723;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav button:hover {
+  
+  transform: scale(1.1);
+  background-color: #777;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  background-color: #a55903;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+div.c1{
+  border-radius: 20px;
+  background-color: rgb(255, 222, 180);
+  width: 90%;
+  float: inline-start;
+}
+
+div.c2{
+  float: left;
+}
+
+h1.h1{
+  background-color: #ffa723;
+  text-align: center;
+  width: 40%;
+  border-radius: 20px;
+  float: center;
+}
+
+div.sticker-container {
+  
+  width: 100px; /* Adjust size */
+  height: 100px; /* Adjust size */
+  position: relative;
+  left: 1000px;
+  bottom: 1200px;
+}
+div.sticker-container1 {
+  
+  width: 100px; /* Adjust size */
+  height: 100px; /* Adjust size */
+  position: relative;
+  left: 1000px;
+  bottom: 900px;
+}
+div.sticker-container2 {
+  
+  width: 100px; /* Adjust size */
+  height: 100px; /* Adjust size */
+  position: relative;
+  left: 1000px;
+  bottom: 600px;
+}
+div.sticker-container3 {
+  
+  width: 300px; /* Adjust size */
+
+  position: relative;
+  left: 1000px;
+  bottom: 300px;
+}
+
+
+img.sticker3 {
+  width: 100px;
+  right: 100px;
+}
+
+img.sticker3:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  transition: transform 0.2s ease;
+}

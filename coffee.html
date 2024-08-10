@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="coffeestyle.css">
+</head>
+<body>
+    
+    <header>
+        <h1>No Coffee,No Coding!</h1>
+        <nav>
+            <button onclick="location.href='webpage.html'">Programming</button>
+            <button onclick="location.href='coffee.html'">Coffee</button>
+        </nav>
+    </header>
+    <main>
+        <h1 class="h1">Make your own coffee!</h1>
+        <h2>*Get your coffee ready and start coding!*</h2>
+        
+    </main>
+    <div class="coffee-maker">
+        <h1>Coffee Maker</h1>
+        <div class="status">
+            <p id="status-text">Ready to Brew</p>
+        </div>
+        <button id="brew-button">Brew Coffee</button>
+        <div id="reward" class="reward">
+            <!-- Add your reward image here -->
+            <img src="coffee-cup.png" alt="Coffee Cup" id="reward-img" style="display: none;">
+            <p id="reward-text" style="display: none;">Enjoy your coffee!</p>
+        </div>
+        <p class="p1">
+            . <br>
+            .<br>
+            .<br>
+            .<br>
+            .<br>
+            .<br>
+            . <br>
+            .<br>
+            .<br>
+            .<br>
+            .<br>
+            .<br>
+          </p>
+    </div>
+
+    <script>
+        document.getElementById('brew-button').addEventListener('click', function() {
+            var statusText = document.getElementById('status-text');
+            var rewardImg = document.getElementById('reward-img');
+            var rewardText = document.getElementById('reward-text');
+            
+            statusText.textContent = 'Brewing...';
+            rewardImg.style.display = 'none';
+            rewardText.style.display = 'none';
+            
+            setTimeout(function() {
+                statusText.textContent = 'Coffee is Ready!';
+                rewardImg.style.display = 'block';
+                rewardText.style.display = 'block';
+            }, 3000); // Simulate brewing time (3 seconds)
+        });
+    </script>
+    <footer>
+        <p>&copy; 2024 fediallegue@gmail.com</p>
+    </footer>
+</body>
+</html>
